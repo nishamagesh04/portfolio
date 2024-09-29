@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha Mageshwara Rao - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f4f8; 
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #00796b; /* Darker teal */
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px; 
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffab40; 
+        }
+
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 50px; 
+            background-color: #e0f7fa; 
+            color: #333;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #004d40; 
+        }
+
+        .hero-text p {
+            font-size: 18px; 
+            margin-bottom: 20px;
+        }
+
+        .hero-text button {
+            background-color: #ffab40; 
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-text button:hover {
+            background-color: #f57c20; 
+        }
+
+        .hero img {
+            width: 300px; 
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        
+        #about {
+            padding: 60px 50px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #about h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #00796b;
+        }
+
+        #about img {
+            width: 150px; 
+            border-radius: 50%; 
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px; 
+            color: #555;
+        }
+
+       
+        #skills {
+            padding: 60px 50px;
+            background-color: #f0f4f8;
+        }
+
+        #skills h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #00796b;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            flex: 0 1 25%; 
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e0f7fa; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-item h3 {
+            font-size: 22px; 
+            color: #004d40;
+            margin-bottom: 5px;
+        }
+
+       
+        #projects {
+            padding: 60px 50px;
+            background-color: #fff;
+        }
+
+        #projects h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #00796b;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project-item {
+            width: 300px; 
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            color: white; 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-item h3 {
+            font-size: 22px; 
+            margin: 10px 0;
+        }
+
+        .project-item p {
+            font-size: 16px; 
+            color: #fff;
+        }
+
+      
+        #contact {
+            padding: 60px 50px;
+            background-color: #00796b; 
+            color: white;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        #contact p {
+            font-size: 18px; 
+            margin-bottom: 20px;
+        }
+
+        #contact a {
+            color: #ffab40; 
+            text-decoration: none;
+            font-size: 20px; 
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40; 
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Nisha Mageshwara Rao</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Hello, I'm Nisha 👋</h2>
+        <p>I'm a Data Science pursuing student with a passion for transforming data into actionable insights. I specialize in statistical analysis, leveraging tools like Python, R, and SQL to drive data-driven decision-making. My goal is to harness the power of data to solve complex problems and deliver impactful solutions..</p>
+        <a href="#projects">
+            <button>Explore My Work</button>
+        </a>
+    </div>
+    <img src="image.jpg" alt="Nisha at work">
+</section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Myself</h2>
+        <img src="images.jpg" alt="Nisha's photo"> <!-- Add your image here -->
+        <p>I'm a Data Science pursuing student with a passion for transforming data into actionable insights. My goal is to craft code that is efficient, scalable, and sustainable.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-item">
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Python</h3>
+            </div>
+            <div class="skill-item">
+                <h3>MySQL</h3>
+            </div>
+            <div class="skill-item">
+                <h3>MongoDB</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Java</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Flask</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Bootstrap</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Django</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Figma</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Machine<br>Learning</h3>
+            </div>
+            <div class="skill-item">
+                <h3>DSA</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Power BI</h3>
+            </div>
+        </div>
+    </section>
+
+  <!-- Projects Section -->
+<section id="projects">
+    <h2 style="text-align: center; font-size: 32px;">Projects</h2>
+    <div class="projects-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px 20px;">
+
+        <!-- Project 1: Travel Itinerary Planner -->
+<div class="project-item" style="width: 250px; padding: 15px; background-color: #fff; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); border-radius: 10px; text-align: center;">
+    <h3 style="font-size: 18px; margin-bottom: 10px; color: black;">Travel Itinerary Planner</h3>
+    <div style="width: 100%; height: 150px; background-image: url('pro1.jpg'); background-size: cover; background-position: center; border-radius: 8px;"></div>
+    <p style="color: #555; margin-top: 10px;">An application for planning travel itineraries, managing bookings, and discovering local attractions, developed with React and Firebase.</p>
+</div>
+
+
+        <!-- Project 2: Recipe Finder App -->
+        <div class="project-item" style="width: 250px; padding: 15px; background-color: #fff; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); border-radius: 10px; text-align: center;">
+            <h3 style="font-size: 18px; margin-bottom: 10px; color:black;">Recipe Finder App</h3>
+            <div style="width: 100%; height: 150px; background-image: url('pro2.jpg'); background-size: cover; background-position: center; border-radius: 8px;"></div>
+            <p style="color: #555; margin-top: 10px;">A web application that allows users to search for recipes based on ingredients, utilizing a public recipe API for data.</p>
+        </div>
+
+        <!-- Project 3: Online Learning Platform -->
+        <div class="project-item" style="width: 250px; padding: 15px; background-color: #fff; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); border-radius: 10px; text-align: center;">
+            <h3 style="font-size: 18px; margin-bottom: 10px;color:black;">Online Learning Platform</h3>
+            <div style="width: 100%; height: 150px; background-image: url('pro3.jpg'); background-size: cover; background-position: center; border-radius: 8px;"></div>
+            <p style="color: #555; margin-top: 10px;">A platform for online courses with video tutorials and quizzes, using Django and PostgreSQL.</p>
+        </div>
+
+        <!-- Project 4: Train Booking System -->
+<div class="project-item" style="width: 250px; padding: 15px; background-color: #fff; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); border-radius: 10px; text-align: center;">
+    <h3 style="font-size: 18px; margin-bottom: 10px; color: black;">Train Booking System</h3>
+    <div style="width: 100%; height: 150px; background-image: url('pro4.jpg'); background-size: cover; background-position: center; border-radius: 8px;"></div>
+    <p style="color: #555; margin-top: 10px;">An application for booking train tickets and managing schedules, developed with Ruby on Rails and Bootstrap.</p>
+</div>
+
+    </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email me at: <a href="mailto:nisha@example.com">nisha@example.com</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Nisha Mageshwara Rao. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
